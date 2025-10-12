@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - MyDrAI</title>
+    <meta name="description" content="Get help and support for MyDrAI - AI Health Assistant & Doctor Chat">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #C9C9C9 0%, #57C785 50%, #EDDD53 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2A9D8F;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            color: #2A9D8F;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: #57C785;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            margin: 100px auto 50px;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2A9D8F;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .support-intro {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            color: #2A9D8F;
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #57C785;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #2A9D8F;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2A9D8F;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #2A9D8F, #57C785);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+
+        .troubleshooting {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+
+        .troubleshooting h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+
+        .steps {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .steps h4 {
+            color: #2A9D8F;
+            margin-bottom: 0.5rem;
+        }
+
+        .steps ol {
+            margin-left: 1.5rem;
+        }
+
+        .steps li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: 80px 10px 20px;
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">MyDrAI</a>
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Support Center</h1>
+        <p class="support-intro">We're here to help you get the most out of MyDrAI. Find answers to common questions or contact our support team.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I get started with MyDrAI?</div>
+            <p>After downloading the app, you'll go through a simple onboarding process where you'll set up your profile, choose your health goals, and select your preferred AI doctor. The app will guide you through each step.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is MyDrAI a replacement for real doctors?</div>
+            <p>No, MyDrAI is not a replacement for professional medical care. It's designed to provide health information, wellness tracking, and general guidance. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How does the image analysis feature work?</div>
+            <p>You can upload photos through the chat interface, and our AI doctors will analyze them to provide insights. This feature uses advanced AI technology to help identify potential health concerns, but it's not a substitute for professional medical diagnosis.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I use MyDrAI without a subscription?</div>
+            <p>Yes! MyDrAI offers a free tier with basic features. Premium subscribers get access to advanced AI features, unlimited consultations, and priority support. You can upgrade anytime through the app.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I cancel my subscription?</div>
+            <p>You can cancel your subscription at any time through your App Store account settings. Go to Settings > [Your Name] > Subscriptions, find MyDrAI, and tap "Cancel Subscription."</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is my health data secure?</div>
+            <p>Absolutely. We use industry-standard encryption and security measures to protect your data. Your health information is never shared with third parties without your explicit consent. Read our Privacy Policy for more details.</p>
+        </div>
+
+        <h2>Common Troubleshooting</h2>
+
+        <div class="troubleshooting">
+            <h3>🔧 App Not Working Properly?</h3>
+            <div class="steps">
+                <h4>Try these steps:</h4>
+                <ol>
+                    <li>Force close the app and restart it</li>
+                    <li>Check your internet connection</li>
+                    <li>Update to the latest version from the App Store</li>
+                    <li>Restart your device</li>
+                    <li>Clear app cache (Settings > General > iPhone Storage > MyDrAI > Offload App)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="troubleshooting">
+            <h3>📱 Notifications Not Working?</h3>
+            <div class="steps">
+                <h4>Check these settings:</h4>
+                <ol>
+                    <li>Go to Settings > Notifications > MyDrAI</li>
+                    <li>Make sure "Allow Notifications" is enabled</li>
+                    <li>Check that notification permissions are granted in the app</li>
+                    <li>Ensure Do Not Disturb is not blocking notifications</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="troubleshooting">
+            <h3>🤖 AI Responses Not Loading?</h3>
+            <div class="steps">
+                <h4>Try these solutions:</h4>
+                <ol>
+                    <li>Check your internet connection</li>
+                    <li>Wait a moment for the AI to process your request</li>
+                    <li>Try sending a shorter message</li>
+                    <li>Restart the chat by closing and reopening it</li>
+                    <li>Contact support if the issue persists</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Contact Support</h2>
+        <p>Need more help? Our support team is here to assist you. Choose the method that works best for you:</p>
+
+        <div class="contact-methods">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email Support</h3>
+                <p>Get detailed help via email. We typically respond within 24 hours.</p>
+                <p><strong>support@mydrai.com</strong></p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>In-App Chat</h3>
+                <p>Chat directly with our support team through the app for quick assistance.</p>
+                <p><strong>Available 24/7</strong></p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone Support</h3>
+                <p>Speak with a support representative for urgent issues.</p>
+                <p><strong>+1 (555) 123-4567</strong></p>
+            </div>
+        </div>
+
+        <h2>What to Include in Your Support Request</h2>
+        <p>To help us assist you better, please include:</p>
+        <ul>
+            <li>Your device model and iOS version</li>
+            <li>MyDrAI app version (found in Settings)</li>
+            <li>Detailed description of the issue</li>
+            <li>Steps you've already tried</li>
+            <li>Screenshots if applicable</li>
+            <li>Your account email (if applicable)</li>
+        </ul>
+
+        <h2>Response Times</h2>
+        <ul>
+            <li><strong>Email Support:</strong> Within 24 hours</li>
+            <li><strong>In-App Chat:</strong> Within 2 hours during business hours</li>
+            <li><strong>Phone Support:</strong> Immediate during business hours (9 AM - 6 PM EST)</li>
+            <li><strong>Emergency Issues:</strong> Priority response within 1 hour</li>
+        </ul>
+
+        <h2>Business Hours</h2>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM EST</p>
+        <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM EST</p>
+        <p><strong>Sunday:</strong> Closed (Emergency support available)</p>
+
+        <div style="background: #e8f5e8; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center;">
+            <h3 style="color: #2A9D8F; margin-bottom: 1rem;">🚀 Pro Tip</h3>
+            <p>For the fastest support, use the in-app chat feature. Our AI support assistant can help with most common questions instantly!</p>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem; color: #666;">
+            <strong>We're committed to providing excellent support. Don't hesitate to reach out if you need any assistance!</strong>
+        </p>
+    </div>
+</body>
+</html>
